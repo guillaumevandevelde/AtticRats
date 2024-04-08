@@ -12,9 +12,20 @@
         }
         body {
             background-image: url('atticrats.webp');
-            background-position: center;
+            background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
+        }
+        /* Media query voor mobiele apparaten in portrait modus */
+        @media (max-width: 500px) {
+            body {
+                /* Aangepaste eigenschappen voor mobiele apparaten */        
+                background-image: url('atticrats-vertical.webp');  
+                background-position: center center; /* Dit kan worden aangepast naar bijvoorbeeld 50% 50% om te focussen */
+                background-size: contain;
+                background-repeat: no-repeat;
+                
+            }
         }
     </style>
 </head>
